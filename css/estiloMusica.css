@@ -1,0 +1,21 @@
+*, html {
+    box-sizing: border-box;
+}
+
+.galeriaMusicaGrid img{
+    width: 300px;
+}
+
+/*ns p q m da la sensación d q está más pegado a la derecha, y hay más 
+espacio en la izquierda. No bn centrao. P Q??????*/
+body{
+    display: flex;
+    justify-content: center;
+}
+.galeriaMusicaGrid{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 4rem;
+}
