@@ -2,20 +2,46 @@
     box-sizing: border-box;
 }
 
-.galeriaMusicaGrid img{
-    width: 300px;
-}
 
-/*ns p q m da la sensación d q está más pegado a la derecha, y hay más 
-espacio en la izquierda. No bn centrao. P Q??????*/
+/*CONTENEDOR GRID .galeriaMusicaGrid, CENTRADO EN BODY
+Y FONDO DEL BODY*/
 body{
     display: flex;
     justify-content: center;
+    background-image: url('../img/fondoOjos.jpg');
+    background-size: cover; /*para que ocupe todo el fondo y no salgan patrones raros*/
 }
 .galeriaMusicaGrid{
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    gap: 4rem;
     padding: 4rem;
+    color: white;
+    /*genuinamente me lo planteo xd
+    border: solid rgb(177, 17, 17) 3px;*/
+    /*meramente pa visualizar contenedores
+    background-color: black;*/
+}
+
+
+/*IMÁGENES DE LA GALERÍA TRANSLÚCIDAS Y, CUANDO HOVER, TOTALMENTE OPACAS*/
+.galeriaMusicaGrid img{
+    width: 75%;
+    opacity: 0.45; /*opacidad 0.45 sobre 1, para q se vean un pelín translúcidas*/
+    transition: 0.5s; /*para que el hover no se vea tan brusco*/
+}
+.galeriaMusicaGrid img:hover{
+    opacity: 1; /*cuando ponemos encima el ratón, 100% opacas, 1 sobre 1*/
+}
+
+
+/*MONTO TEXTO SOBRE IMAGEN*/
+article{
+    position: relative;
+}
+.infoMusica{
+    position: absolute;
+    left: 7rem;
+    top: 2rem;
 }
