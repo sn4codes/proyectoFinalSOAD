@@ -3,19 +3,39 @@
 }
 
 
-/*HEADER*/
+/*HEADER
+1.1. imagen*/
 header img{
     width: 70px;
-    justify-content: space-around;
     border-radius: 50%;
 }
 header{
     display: flex;
-    /*background-color: aliceblue;*/
+    justify-content: space-between;
     width: 100%; /*IMPORTANTE
     background-color: aliceblue;*/
+    align-items: center; /*centrado vertical*/
 }
 /*display: block; siendo el body flex no funciona*/
+header img:hover{
+    width: 80px;
+}
+/*1.2. nav
+Responsive hamburguesa con CSS y JS:
+https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
+*/
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+ul a{
+    text-decoration: none;
+    color: rgb(126, 17, 17);
+}
+ul a:hover{
+    color: white;
+}
 
 
 /*CONTENEDOR GRID .galeriaMusicaGrid, CENTRADO EN BODY
@@ -35,9 +55,8 @@ body{
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
+    margin-top: 0.5rem;
     gap: 4rem;
-    padding: 4rem;
-    /*padding: 4rem;*/
     color: white;
     /*efecto halo: 
     desplazamiento eje x, eje y, grosor del degradado, color del degradado
@@ -52,7 +71,7 @@ body{
 
 /*IMÁGENES DE LA GALERÍA TRANSLÚCIDAS Y, CUANDO HOVER, TOTALMENTE OPACAS*/
 .galeriaMusicaGrid img{
-    width: 75%;
+    width: 70%;
     opacity: 0.45; /*opacidad 0.45 sobre 1, para q se vean un pelín translúcidas*/
     transition: 0.5s; /*para que el hover no se vea tan brusco*/
 }
