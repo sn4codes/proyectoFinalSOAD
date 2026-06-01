@@ -3,28 +3,50 @@
 }
 
 
+/*HEADER*/
+header img{
+    width: 70px;
+    justify-content: space-around;
+    border-radius: 50%;
+}
+header{
+    display: flex;
+    /*background-color: aliceblue;*/
+    width: 100%; /*IMPORTANTE
+    background-color: aliceblue;*/
+}
+/*display: block; siendo el body flex no funciona*/
+
+
 /*CONTENEDOR GRID .galeriaMusicaGrid, CENTRADO EN BODY
 Y FONDO DEL BODY*/
 body{
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
+    align-items: center; /*justify-content: center; con direction
+    column no funciona*/
     background-image: url('../img/laCreacion.jpg'); /*entre laCreacion 
     y laCreacionRobotik--demasiado brillante*/
     background-size: cover; /*para que ocupe todo el fondo y no salgan patrones raros*/
 }
 .galeriaMusicaGrid{
+    /*background-color: aliceblue;*/
+
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
     padding: 4rem;
+    /*padding: 4rem;*/
     color: white;
+    /*efecto halo: 
+    desplazamiento eje x, eje y, grosor del degradado, color del degradado
+    meto 3 capas pa q sea más agresiva. 
+    A PONDERAR: METER CAPA OSCURA EN OVERLAY A STEAL THIS ALBUM, O A TODAS.*/
     text-shadow: 
     0 0 5px black, 
     0 0 10px black,
     2px 2px 4px black;
-    /*efecto halo: 
-    desplazamiento eje x, eje y, grosor del degradado, color del degradado*/
 }
 
 
