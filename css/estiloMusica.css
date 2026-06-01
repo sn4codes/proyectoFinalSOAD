@@ -8,6 +8,7 @@
 header img{
     width: 70px;
     border-radius: 50%;
+    transition: 0.5s;
 }
 header{
     display: flex;
@@ -32,6 +33,7 @@ ul{
 ul a{
     text-decoration: none;
     color: rgb(126, 17, 17);
+    transition: 0.5s;
 }
 ul a:hover{
     color: white;
@@ -50,8 +52,6 @@ body{
     background-size: cover; /*para que ocupe todo el fondo y no salgan patrones raros*/
 }
 .galeriaMusicaGrid{
-    /*background-color: aliceblue;*/
-
     display: grid;
     width: 80%;
     grid-template-columns: repeat(3, 1fr);
