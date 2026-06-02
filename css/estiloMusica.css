@@ -3,48 +3,69 @@
 }
 
 
+
 /*HEADER
-1.1. imagen*/
-header img{
+1.1. display y estructura del header e imagen-logo*/
+header{
+    width: 100%; /*IMPORTANTE
+    background-color: aliceblue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*centrado vertical*/
+}
+header a img{
     width: 70px;
     border-radius: 50%;
     transition: 0.5s;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /*IMPORTANTE
-    background-color: aliceblue;*/
-    align-items: center; /*centrado vertical*/
-}
-/*display: block; siendo el body flex no funciona*/
-header img:hover{
+header a img:hover{
     width: 80px;
 }
 /*1.2. nav
 Responsive hamburguesa con CSS y JS:
 https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
 */
-ul{
+#navbarUl{
     display: flex;
     list-style-type: none;
-    gap: 1rem;
+    gap: 1.2rem;
 }
-ul a{
+#navbarUl a{
     text-decoration: none;
-    color: rgb(126, 17, 17);
+    color: rgb(201, 25, 25);
     transition: 0.5s;
 }
-ul a:hover{
+#navbarUl a:hover{
     color: white;
 }
+
+#hamburguesaImg{ /*¿¿Fondo blanco??--Es del botón.
+    Cómo le quito el borde ese feo xdios*/
+    width: 60px;
+    transition: 0.5s;
+    /*border-radius: 50%; */
+    display: block;/*para que no me salga línea blanca de texto debajo, 
+    asociada a comportamiento inline de los elementos.*/
+}
+#hamburguesaImg:hover{
+    width: 70px;
+}
+#hamburguesaBoton{
+    background-color: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; /*para que salga la mano */
+    /*line-height: 0; otra opción para que desaparezca raya blanca imagen*/
+}
+
 
 
 /*CONTENEDOR GRID .galeriaMusicaGrid, CENTRADO EN BODY
 Y FONDO DEL BODY*/
 body{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /*display: block; al header 
+    siendo el body flex no funciona*/
     align-items: center; /*justify-content: center; con direction
     column no funciona*/
     background-image: url('../img/laCreacion.jpg'); /*entre laCreacion 
@@ -69,6 +90,7 @@ body{
 }
 
 
+
 /*IMÁGENES DE LA GALERÍA TRANSLÚCIDAS Y, CUANDO HOVER, TOTALMENTE OPACAS*/
 .galeriaMusicaGrid img{
     width: 70%;
@@ -78,6 +100,7 @@ body{
 .galeriaMusicaGrid img:hover{
     opacity: 1; /*cuando ponemos encima el ratón, 100% opacas, 1 sobre 1*/
 }
+
 
 
 /*MONTO TEXTO SOBRE IMAGEN*/
