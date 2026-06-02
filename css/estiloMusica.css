@@ -35,7 +35,8 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     color: rgb(201, 25, 25);
     transition: 0.5s;
 }
-#navbarUl a:hover{
+#navbarUl a:hover, #hamburguesaUl a:hover{ /*tb pongo aquí el hover 
+    del texto del menú de hamburguesa*/
     color: white;
 }
 
@@ -59,7 +60,9 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     display: none;
 }
 
-/*Media Query*/
+/*Media Query
+Para que cuando la pantalla mida menos de 1000px
+salga nuestro botón hamburguesa y desaparezca en navbar de texto*/
 @media (max-width: 1000px){
     #navbar{
         display: none;
@@ -99,9 +102,6 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     color: rgb(201, 25, 25);
     font-size: 1.5rem;
     transition: 0.5s;
-}
-#hamburguesaUl a:hover{
-    color: white;
 }
 #hamburguesaBotonCierre{
     cursor: pointer;
