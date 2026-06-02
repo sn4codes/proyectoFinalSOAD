@@ -14,12 +14,12 @@ header{
     align-items: center; /*centrado vertical*/
 }
 header a img{
-    width: 70px;
+    width: 75px;
     border-radius: 50%;
     transition: 0.5s;
 }
 header a img:hover{
-    width: 80px;
+    width: 85px;
 }
 /*1.2. nav
 Responsive hamburguesa con CSS y JS:
@@ -39,23 +39,75 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     color: white;
 }
 
-#hamburguesaImg{ /*¿¿Fondo blanco??--Es del botón.
-    Cómo le quito el borde ese feo xdios*/
-    width: 60px;
+#hamburguesaImg{ 
+    width: 65px;
     transition: 0.5s;
     /*border-radius: 50%; */
     display: block;/*para que no me salga línea blanca de texto debajo, 
     asociada a comportamiento inline de los elementos.*/
 }
 #hamburguesaImg:hover{
-    width: 70px;
+    width: 75px;
 }
 #hamburguesaBoton{
     background-color: none;
     border: none;
     padding: 0;
-    cursor: pointer; /*para que salga la mano */
+    cursor: pointer; /*para que salga la mano.
+    En foto-logo sale solo, tb en enlaces, ¿pq ya t llevan a algún lao?*/
     /*line-height: 0; otra opción para que desaparezca raya blanca imagen*/
+    display: none;
+}
+
+/*Media Query*/
+@media (max-width: 1000px){
+    #navbar{
+        display: none;
+    }
+    #hamburguesaBoton{
+        display: block;
+    }
+}
+
+/*Menú hamburguesa fullscreen*/
+#menuHamburguesa{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+#hamburguesaUl{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+#hamburguesaUl a{
+    text-decoration: none;
+    color: rgb(201, 25, 25);
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+#hamburguesaUl a:hover{
+    color: white;
+}
+#hamburguesaBotonCierre{
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
 }
 
 
