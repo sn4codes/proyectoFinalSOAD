@@ -70,6 +70,11 @@ salga nuestro botón hamburguesa y desaparezca en navbar de texto*/
     #hamburguesaBoton{
         display: block;
     }
+
+    /*.galeriaMusicaGrid{
+        grid-template-columns: 
+        repeat(2, 1fr);
+    } ¿p q no hace na?*/
 }
 
 /*Menú hamburguesa fullscreen*/
@@ -127,7 +132,15 @@ body{
 .galeriaMusicaGrid{
     display: grid;
     width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /*"Inspeccionar propiedades de accesibilidad"--viewport de móvil casi perfecto tío.
+    Y ya q el fondo se adaptara sería espectacular, pero idk how to do that.*/
+
+    /*
     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    */
+
     margin-top: 0.5rem;
     gap: 4rem;
     color: white;
