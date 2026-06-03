@@ -3,13 +3,76 @@
 }
 
 
+
+/*HEADER
+1.1. display y estructura del header, imagen-logo, h1*/
+header{
+    /*background-color: purple;*/
+    background-color: purple;
+    display: flex;
+}
+header a img{
+    width: 15%; /*200px*/
+    border-radius: 50%;
+    transition: 0.5s;
+}
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em; /*? rem tp*/
+}
+/*1.2. nav
+Responsive hamburguesa con CSS y JS*/
+#navbarUl{ /*en musica lo noto más separao de la derecha*/
+    display: flex;
+    list-style-type: none;
+    gap: 1.2rem;
+}
+#navbarUl a{
+    text-decoration: none;
+    color: rgb(201, 25, 25);
+    transition: 0.5s;
+}
+#navbarUl a:hover, #hamburguesaUl a:hover{ /*tb pongo aquí el hover 
+    del texto del menú de hamburguesa*/
+    color: white;
+}
+
+#hamburguesaImg{ 
+    width: 65px;
+    transition: 0.5s;
+    /*border-radius: 50%; */
+    display: block;/*para que no me salga línea blanca de texto debajo, 
+    asociada a comportamiento inline de los elementos.*/
+}
+#hamburguesaImg:hover{
+    width: 75px;
+}
+#hamburguesaBoton{
+    background-color: none;
+    border: none;
+    padding: 0;
+    cursor: pointer; /*para que salga la mano.
+    En foto-logo sale solo, tb en enlaces, ¿pq ya t llevan a algún lao?*/
+    /*line-height: 0; otra opción para que desaparezca raya blanca imagen*/
+    /*display: none;*/
+    height: fit-content; /*Lit lo encuentro probando opciones 
+    sugeridas por vscode.
+    Para que la altura del botón me 
+    coincida con la altura de la imagen que contiene y no me
+    ocupe todo el alto del header. ¿X q en musica no pasa?
+    ¿Justo las alturas coincidían?
+    ¿La rayita de abajo era eso?*/
+}
+
+
+
+
+/**/
 body{
     background-image: url('../img/forest1.jpg');
     background-size: cover;
 }
-
-
-header img{
-    width: 200px;
-    border-radius: 50%;
+.giffy{
+    width: 100%;
 }

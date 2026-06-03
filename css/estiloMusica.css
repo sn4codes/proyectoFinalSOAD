@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     border: none;
     padding: 0;
     cursor: pointer; /*para que salga la mano.
-    En foto-logo sale solo, tb en enlaces, ¿pq ya t llevan a algún lao?*/
+    En foto-logo sale solo, tb en enlaces*/
     /*line-height: 0; otra opción para que desaparezca raya blanca imagen*/
     display: none;
 }
