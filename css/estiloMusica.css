@@ -34,6 +34,7 @@ https://www.youtube.com/watch?v=Xs3cC8-5QDI&t=701s
     text-decoration: none;
     color: rgb(201, 25, 25);
     transition: 0.5s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #navbarUl a:hover, #hamburguesaUl a:hover{ /*tb pongo aquí el hover 
     del texto del menú de hamburguesa*/

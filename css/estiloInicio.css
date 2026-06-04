@@ -5,21 +5,24 @@
 
 
 /*HEADER
-1.1. display y estructura del header, imagen-logo, h1*/
+1.1. display y estructura del header STICKY
+(a lo largo del contenedor #stickyDiv)
+*/
 header{
-    /*background-color: purple;*/
-    background-color: purple;
+    background-color: black;
+    opacity: 0.85;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100; /*para que no haya manera terrena o ultraterrena de que quede 
+    x debajo de na.*/
 }
-header a img{
-    width: 15%; /*200px*/
-    border-radius: 50%;
+header a img{ /*cómo cojone la hago responsive*/
+    width: 500px;
     transition: 0.5s;
-}
-h1{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 5em; /*? rem tp*/
 }
 /*1.2. nav
 Responsive hamburguesa con CSS y JS*/
@@ -30,8 +33,11 @@ Responsive hamburguesa con CSS y JS*/
 }
 #navbarUl a{
     text-decoration: none;
-    color: rgb(201, 25, 25);
+    color: rgb(183, 4, 4);
     transition: 0.5s;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 #navbarUl a:hover, #hamburguesaUl a:hover{ /*tb pongo aquí el hover 
     del texto del menú de hamburguesa*/
@@ -39,40 +45,117 @@ Responsive hamburguesa con CSS y JS*/
 }
 
 #hamburguesaImg{ 
-    width: 65px;
     transition: 0.5s;
-    /*border-radius: 50%; */
-    display: block;/*para que no me salga línea blanca de texto debajo, 
-    asociada a comportamiento inline de los elementos.*/
+    /*border-radius: 50%;*/
+    display: block;
+    width: 100px;
 }
-#hamburguesaImg:hover{
-    width: 75px;
+#hamburguesaImg:hover{ /*¿X q este hover me desplaza contenido y en 
+    musica no?*/
+    width: 150px;
 }
 #hamburguesaBoton{
-    background-color: none;
+    background-color: transparent; /*none parece ser invent haha*/
     border: none;
     padding: 0;
-    cursor: pointer; /*para que salga la mano.
-    En foto-logo sale solo, tb en enlaces, ¿pq ya t llevan a algún lao?*/
-    /*line-height: 0; otra opción para que desaparezca raya blanca imagen*/
-    /*display: none;*/
-    height: fit-content; /*Lit lo encuentro probando opciones 
-    sugeridas por vscode.
-    Para que la altura del botón me 
-    coincida con la altura de la imagen que contiene y no me
-    ocupe todo el alto del header. ¿X q en musica no pasa?
-    ¿Justo las alturas coincidían?
-    ¿La rayita de abajo era eso?*/
+    cursor: pointer; /*mano señaladora*/
+    display: none;
 }
 
 
 
 
-/**/
+/*MAIN*/
+.mediaFullWidth{ /*foto del ppio y gif*/
+    width: 100%;
+}
 body{
     background-image: url('../img/forest1.jpg');
     background-size: cover;
 }
-.giffy{
-    width: 100%;
+
+
+/*section #giraFechas*/
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5em; /*? rem tp*/
 }
+h1 span:hover{/*JS: ir cambiando cada 0.8s la tipografía*/
+    transition: 0.5s;
+    color: rgb(183, 4, 4);
+}
+h2{
+    color: rgb(183, 4, 4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.concierto{
+    /*background-color: rgb(28, 26, 26);*/
+    background-color: #1c1c1c;
+    opacity: 0.85;
+    /*margin-bottom*/
+}
+.diana{
+    width: 100px;
+}
+.concierto summary{
+    display: flex; /*la flecha nativa "desaparece" con flex...*/
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5%;
+    cursor: pointer; /*manue la manita relajá*/
+    /*list-style armenian*/
+
+    /*...aun así, es buena práctica meter list-style: none
+    y webkit porque no todos los navegadores la ocultan, 
+    podría salir de forma rara en el flujo:
+    ocultándola nosotros manualmente, nos aseguramos de que no ocurra.
+    
+    --contrastar*/
+    list-style: none; /*firefox*/
+    color: whitesmoke;
+}
+.concierto summary::-webkit-details-marker{ /*motores Webkit/Blink: 
+    chrome, edge, opera, safari*/
+    display: none;
+}
+
+.textoSummary{
+    display: flex;
+    gap: 1.5rem;
+    /*background-color: wheat;*/
+    align-items: center;
+}
+
+.fecha{
+    background-color: rgb(183, 4, 4);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: black;
+    font-weight: bolder;
+}
+
+
+/*Q EL ESPACIO ENTRE CONCIERTO Y CONCIERTO SEA TRANSPARENTE margin-bottom x ex.
+Probar otros tipos de separaciones.
+++Estilizar desplegable y meter enlaces d vd.
+d responsiveness en móvil d mom lo q no da el pego pa na es el header.
+Halo a la diana y/o al detail cuando paso por encima ratón??
+
+como flexita quiero poner la liana roja hehe
+FONDO DE .CONCIERTOS CON PEQUEÑO ESPACIO ENTRE MEDIAS
+NEGRO CON OPACIDAD 0.8 APROX.
+Hamburguesa, responsive en móvil, aquello de que el 
+ahora vaya cambiando tipografía PUNTASO 30 segs después 
+de hover, no solo durante???
+, y +- lo tenemos.
+
+flash warning en navbar que desaparezca a los 20 segundos de 
+cargar la página???*/
+
