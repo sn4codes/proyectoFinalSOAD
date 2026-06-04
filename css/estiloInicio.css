@@ -94,10 +94,8 @@ h2{
     /*background-color: rgb(28, 26, 26);*/
     background-color: #1c1c1c;
     opacity: 0.85;
-    /*margin-bottom*/
-}
-.diana{
-    width: 100px;
+    margin-bottom: 15px; /*otra opción, q sea #giraFechas
+    un contenedor flex y ponerle gap.*/
 }
 .concierto summary{
     display: flex; /*la flecha nativa "desaparece" con flex...*/
@@ -127,6 +125,23 @@ h2{
     /*background-color: wheat;*/
     align-items: center;
 }
+.diana, .bandera{ /*igualar alturas yo me cago en to
+    y tamaños hacer responsive para móvil.*/
+    width: 100px;
+}
+@media (max-width: 700px){ /*330px móviles, se ve mal con 
+    ambas imgs, pero mg diana en pc, así que: */
+    .diana{
+        display: none;
+    }
+    /*quizás bandera un plín más pq, pero bn así tb*/
+}
+.imgsSummary{
+    /*background-color: wheat;*/
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
 .fecha{
     background-color: rgb(183, 4, 4);
@@ -147,6 +162,12 @@ Probar otros tipos de separaciones.
 ++Estilizar desplegable y meter enlaces d vd.
 d responsiveness en móvil d mom lo q no da el pego pa na es el header.
 Halo a la diana y/o al detail cuando paso por encima ratón??
+
+banderas junto a diana** no muy estético pero a ve
+
+scrollspy menú***
+
+meter htmls en una carpeta** (reajustar ../ en enlaces). 
 
 como flexita quiero poner la liana roja hehe
 FONDO DE .CONCIERTOS CON PEQUEÑO ESPACIO ENTRE MEDIAS
