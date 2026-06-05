@@ -120,9 +120,9 @@ h2{
 }
 
 .textoSummary{
+    /*background-color: wheat;*/
     display: flex;
     gap: 1.5rem;
-    /*background-color: wheat;*/
     align-items: center;
 }
 .diana, .bandera{ /*igualar alturas yo me cago en to
@@ -155,6 +155,39 @@ h2{
     color: black;
     font-weight: bolder;
 }
+
+/*desplegables de la section #giraFechas, divs .entradas*/
+.entradas{
+    display: flex; /*I ♡ flex*/
+    flex-direction: column;
+    align-items: flex-end; /*MUY IMPORTANTE, 
+    si no, los hijos del fex se me estiran y toda la 
+    línea que le corresponde, aunque no haya texto, es
+    enlace activo, lo cual resulta incómodo para la UX :) */
+    gap: 1rem;
+    padding: 2.2rem;
+    font-size: 1.5rem;
+    
+    /*background-color: aqua;*/
+}
+.entradas a{
+    /*background-color: wheat;*/
+    color: rgb(183, 4, 4);
+    transition: 0.5s;
+}
+.entradas a:hover{
+    color: whitesmoke;
+}
+.entradas img{
+    width: 40px;
+    border-radius: 50%;
+}
+.entradas article{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 
 
 /*Q EL ESPACIO ENTRE CONCIERTO Y CONCIERTO SEA TRANSPARENTE margin-bottom x ex.
