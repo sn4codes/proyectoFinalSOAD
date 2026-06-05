@@ -81,6 +81,20 @@ h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 5em; /*? rem tp*/
 }
+h1 span{
+    
+    /*
+    CSS NATIVA font-family:'Courier New', Courier, monospace;
+
+    GOOGLE
+    font-family: "Playwrite AU VIC Guides", cursive;
+    font-family: "Noto Sans Armenian", sans-serif; 
+    ԱՀՈՐԱ
+
+    font-family: "Black Ops One", system-ui;
+    font-family: "Caveat", cursive;
+    */
+}
 h1 span:hover{/*JS: ir cambiando cada 0.8s la tipografía*/
     transition: 0.5s;
     color: rgb(183, 4, 4);
