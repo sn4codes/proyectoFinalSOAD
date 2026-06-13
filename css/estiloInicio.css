@@ -80,7 +80,7 @@ h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
-    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-size: clamp(3rem, 8vw, 5rem);
     line-height: 1;
     display: flex;
     align-items: center;
@@ -89,7 +89,7 @@ h1{
 }
 #ahora{
     display: inline-flex;
-    width: clamp(180px, 35vw, 420px);
+    width: clamp(250px, 35vw, 420px);
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -98,6 +98,13 @@ h1{
     /*q h1 tenga altura determinada y contenido centrao???*/
     
 }
+/*m interesa q salte del to el 
+ahora!
+explicación clamp detallada.*/
+
+
+
+
 
 
     /*

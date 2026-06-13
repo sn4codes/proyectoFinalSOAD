@@ -23,9 +23,10 @@ let indice = 0;
 
 //función para el cambio de estilo y asociar
 //fuente armenia a texto armenio exclusivamente
+//(las tipografías smp van en orden 0-4)
 function cambiarEstilo(){
     ahora.style.fontFamily = fuentes[indice];
-    if(indice === 1){ //mg tb con la tipografía 2, ¿puedo hacer q pa armenia solo 1 y 2 haha?
+    if(indice === 1){
         ahora.textContent = "ԱՀՈՐԱ";
     }
     else{
@@ -41,7 +42,7 @@ function cambiarEstilo(){
     }
 };
 
-//que se ejecute la function cada 800 milisegundos
+//que se ejecute la function cada x (800) milisegundos
 setInterval(cambiarEstilo, 800);
 
 
