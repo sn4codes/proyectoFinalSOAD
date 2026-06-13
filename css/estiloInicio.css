@@ -76,13 +76,30 @@ body{
 
 
 /*section #giraFechas*/
+#tituloAnimao{ /*sentido de este span: 
+    q al ejecutarse la animación de la tipografía no me baile 
+    toda la página.*/
+    display: flex;
+    background-color: blueviolet;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+}
 h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 5em; /*? rem tp*/
 }
-h1 span{
+#ahora{
+    display: inline-block;
+    /*min-width: 220px;
+    height: 300px;
+    width: 600px;*/
+    background-color: azure;
+    /*q h1 tenga altura determinada y contenido centrao???*/
     
+}
+
     /*
     CSS NATIVA font-family:'Courier New', Courier, monospace;
 
@@ -94,11 +111,6 @@ h1 span{
     font-family: "Black Ops One", system-ui;
     font-family: "Caveat", cursive;
     */
-}
-h1 span:hover{/*JS: ir cambiando cada 0.8s la tipografía*/
-    transition: 0.5s;
-    color: rgb(183, 4, 4);
-}
 h2{
     color: rgb(183, 4, 4);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
