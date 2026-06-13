@@ -76,26 +76,26 @@ body{
 
 
 /*section #giraFechas*/
-#tituloAnimao{ /*sentido de este span: 
-    q al ejecutarse la animación de la tipografía no me baile 
-    toda la página.*/
-    display: flex;
-    background-color: blueviolet;
-    height: 600px;
-    width: 100%;
-    align-items: center;
-}
 h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     font-size: 5em; /*? rem tp*/
+    line-height: 1;
+    height: 120px;
+    display: flex;
+    align-items: center;
 }
 #ahora{
-    display: inline-block;
-    /*min-width: 220px;
-    height: 300px;
-    width: 600px;*/
-    background-color: azure;
+    display: inline-flex;
+    width: 420px;
+    height: 120px;
+    justify-content: center;
+    overflow: hidden;
+
+    align-items: center;
+
+    /*background-color: azure;*/
     /*q h1 tenga altura determinada y contenido centrao???*/
     
 }
