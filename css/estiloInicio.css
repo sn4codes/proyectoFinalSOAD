@@ -80,25 +80,25 @@ h1{
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
-    font-size: 5em; /*? rem tp*/
+    font-size: clamp(2.5rem, 8vw, 5rem);
     line-height: 1;
-    height: 120px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    height: auto;
 }
 #ahora{
     display: inline-flex;
-    width: 420px;
+    width: clamp(180px, 35vw, 420px);
     height: 120px;
     justify-content: center;
-    overflow: hidden;
-
     align-items: center;
 
     /*background-color: azure;*/
     /*q h1 tenga altura determinada y contenido centrao???*/
     
 }
+
 
     /*
     CSS NATIVA font-family:'Courier New', Courier, monospace;
